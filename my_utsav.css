@@ -1,0 +1,142 @@
+td {
+    width: 30%;
+    height: 30%;
+    border: 4px solid black;
+    border-radius: 9%;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+}
+
+td.face1 {
+    background-color: white;
+    /* border: 10px solid; */
+}
+
+td.face2 {
+    background-color: darkorange;
+}
+
+td.face3 {
+    background-color: darkblue;
+}
+
+td.face4 {
+    background-color: gold;
+}
+
+td.face5 {
+    background-color: forestgreen;
+}
+
+td.face6 {
+    background-color: red;
+}
+
+div.score {
+    border: 10px solid black;
+    margin: auto;
+    width: 350px;
+    font: bold 30px verdana;
+    float: right;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    transform-origin: 50% 50%;
+    position: absolute;
+    background-color: black;
+    border-collapse: separate;
+}
+
+@keyframes r {
+    from {
+        transform: rotatex(0deg) rotatey(0deg);
+    }
+
+    to {
+        transform: rotatex(360deg) rotatey(360deg);
+    }
+}
+
+table.face1 {
+    transform: rotateY(90deg) translate(-50%) rotateY(-90deg);
+}
+
+table.face2 {
+    transform: rotatey(0deg) translate(50%) rotateY(-90deg) translatex(0px);
+}
+
+table.face3 {
+    transform: rotatey(90deg) translate(50%) rotateY(-90deg) translatex(0px);
+}
+
+table.face4 {
+    transform: rotatey(-180deg) translate(50%) rotateY(-90deg) translatex(0px);
+}
+
+table.face5 {
+    transform: rotatex(90deg) rotateY(90deg) translate(-50%) rotatey(-90deg) translatey(0px);
+}
+
+table.face6 {
+    transform: rotatex(90deg) rotateY(90deg) translate(50%) rotateY(-90deg) translatey(0px);
+}
+
+.main {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin: 100px;
+    transform: rotateX(335deg) rotateY(335deg) rotateZ(0deg);
+    transform-style: preserve-3d;
+    transform-origin: 50% 50%;
+    transition: 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    animation: r 5s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+}
+
+@media screen and (max-width: 850px) {
+
+    .main,
+    div.score {
+        position: unset;
+        float: unset;
+        width: 50vw;
+        height: 50vw;
+        margin: auto;
+    }
+}
+
+#main {
+    position: unset;
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    align-items: center;
+    display: grid;
+}
+
+.cir {
+    position: unset;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 7px solid black;
+}
+
+.div-left {
+    background-color: black;
+    width: 100%;
+    height: 20%;
+    transform: rotate(45deg);
+}
+
+.div-right {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}

@@ -22,14 +22,14 @@
 .left{
     height: 10%;
     width: 8%;
-    border: 10px solid black;
-    transform: rotate(45deg);
+    border: 5px solid black;
+    transform: rotate(45deg) translate(6px,5px);
     background-color: black;
 }
 .right{
     height: 10%;
     width: 8%;
-    border: 10px solid black;
+    border: 5px solid black;
     transform: rotate(-45deg);
     background-color: black;
 } 

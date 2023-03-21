@@ -6,11 +6,13 @@ for (let i of td_content) {
   i.onclick = function () {
     if (turn % 2 == 0) {
       var copy = cross.cloneNode(true);
+      copy.removeAttribute("hidden");
     } 
     else {
       var copy = circle.cloneNode(true);
+      copy.removeAttribute("hidden");
     }
-    copy.removeAttribute("hidden");
+    
     i.append(copy);
     i.onclick = null;
     turn++;

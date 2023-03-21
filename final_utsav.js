@@ -1,4 +1,3 @@
-
 var match = 1;
 const cross = document.getElementById("cross");
 const circle = document.getElementById("circle");
@@ -203,6 +202,3 @@ function O(ele) {
         return true;
     }
 }
-
-
-
